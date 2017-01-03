@@ -7,8 +7,9 @@ const server = express()
 server.set('view engine', 'ejs')
 
 server.get('/', (req, res) => {
-  console.log('test')
-  res.render('index')
+  res.render('index', {
+    content: 'hello express and <em>ejs</em>'
+  })
 })
 
 server.use('/api', apiRouter)
