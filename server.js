@@ -4,10 +4,11 @@ import apiRouter from './api'
 import express from 'express'
 const server = express()
 
-server.use(express.static('public'))
+server.set('view engine', 'ejs')
 
 server.get('/', (req, res) => {
-  res.send('Hello express')
+  console.log('test')
+  res.render('index')
 })
 
 server.use('/api', apiRouter)
