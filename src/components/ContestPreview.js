@@ -9,6 +9,6 @@ const ContestPreview = (contest) => (
       {contest.contestName}
     </div>
   </div>
-);
+)
 
-export default ContestPreview;
+export default ContestPreview
