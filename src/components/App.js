@@ -9,6 +9,12 @@ class App extends React.Component{
     }
   }
 
+  componentDidMount(){
+  }
+
+  componentWillUnmount() {
+  }
+
   render (){
     return(
       <div className="App">
