@@ -15,7 +15,7 @@ server.use(sassMiddleware({
 
 server.get('/', (req, res) => {
   res.render('index', {
-    content: 'hello express and <em>ejs</em>'
+    content: '...'
   })
 })
 
